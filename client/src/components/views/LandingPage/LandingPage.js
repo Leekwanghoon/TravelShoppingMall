@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Icon, Col, Card, Row } from 'antd';
+import {  Col, Card, Row } from 'antd';
 import Meta from 'antd/lib/card/Meta';
 import ImageSlider from '../../utils/ImageSlider';
 import CheckBox from '../NavBar/Sections/CheckBox';
@@ -96,6 +96,7 @@ function LandingPage() {
         let array = [];
 
         for( let key in data ) {
+            // data[key]하면 key: value에서 value값 꺼냉모
             if ( data[key]._id === parseInt(value, 10)) {
                 array = data[key].array; // [200,249]
             }
@@ -162,7 +163,7 @@ function LandingPage() {
 
 
             {postSize >= Limit &&
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', margin: '1rem auto' }}>
                     <button onClick={loadOnMoreHandler}>더보기</button>
                 </div>
             }

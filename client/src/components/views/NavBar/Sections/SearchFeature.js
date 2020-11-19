@@ -17,7 +17,7 @@ function SearchFeature(props) {
             <Search
                 placeholder="input search text"
                 onChange={searchHandler}
-                style={{ width: 200 }}
+                style={{ width: '200px' }}
                 value={SearchTerm}
             />
             <br />

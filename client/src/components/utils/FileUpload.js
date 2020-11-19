@@ -53,6 +53,7 @@ function FileUpload(props) {
                     </div>
                 )}
             </Dropzone>
+            
             <div style={{ display:'flex', width:'350px', height:'240px', overflowX:'scroll'}}>
                 {filePath.map((path,index) => (
                     <div 
