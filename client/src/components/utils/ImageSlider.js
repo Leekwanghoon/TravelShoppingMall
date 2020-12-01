@@ -2,6 +2,9 @@ import React from 'react';
 import { Carousel } from 'antd';
 
 function ImageSlider(props) {
+    
+    // `http://localhost:5000/${image}`
+    console.log(props.images);
     return (
         <div>
             <Carousel autoplay>
@@ -10,7 +13,7 @@ function ImageSlider(props) {
                         <img
                             style={{
                                 width:"100%",
-                                maxHeight:"150px"
+                                maxHeight:"100px"
                             }}
                             src={`http://localhost:5000/${image}`}
                             alt="이미지"
@@ -21,5 +24,6 @@ function ImageSlider(props) {
         </div>
     )
 }
+
 
 export default ImageSlider
